@@ -46,43 +46,31 @@
 
 \section{Los tipos de memoria} \label{contenido}
 
-Esta sección es para ver qué pasa con los comandos 
-que definen texto
+\vspace{0.3cm}
 
-El paquete también agrega un comportamiento especial 
-a <<estas marcas para hacer citas textuales>> tal como 
-lo indican las reglas de la RAE. \cite{dirac}
+\subsection{memoria cache L1,L2,L3}
 
-\begin{lstlisting}
-#include <stdio.h>
-#define N 10
-/* Block
- * comment */
+la memoria cache es más rápida que la memoria RAM a costa de tener menos capacidad que la antes dicha, la cache guarda información que es usada frecuentemente para su rápido acceso. En L1 se guardan instrucciones además de frecuentes importantes ya que es la más rápida al encontrarse en el núcleo del microprocesador, L2 y L3 un poco más lentas pero también con más capacidad, pueden contener la misma información que el nivel que lo precede y adicional.
 
-int main()
-{
-    int i;
+\vspace{0.3cm}
 
-    // Line comment.
-    puts("Hello world!");
-    
-    for (i = 0; i < N; i++)
-    {
-        puts("LaTeX is also great for programmers!");
-    }
+\subsection{memoria RAM}
 
-    return 0;
-}
-\end{lstlisting}
+La memoria RAM es en lo que piensas cuando te mencionan la memoria de un computador, en ella se almacena la mayoria de informacion temporal del equipo, por su facil acceso y gran capacidad.
 
-A continuación se presenta el logo de C++ Figura (\ref{fig:cpplogo})
+\vspace{0.3cm}
 
-\begin{figure}[h]
-\includegraphics[width=4cm]{cpplogo.png}
-\centering
-\caption{Logo de C++}
-\label{fig:cpplogo}
-\end{figure}
+\subsection{memoria Virtual}
+
+La memoria virtual es una porción del disco duro dedicada a guardar pedazos de información de algún programa o tarea que se está procesando pero que son muy poco utilizados o que ocupan espacio innecesario en el momento, y es mejor tenerlos separados para que se puedan llamar cuando el proceso en ejecución lo requiera.
+
+\vspace{0.3cm}
+
+\subsection{Disco Duro}
+
+El disco duro es la memoria con más capacidad de almacenamiento, pero también es la más lenta, acceder a la información se limita a la velocidad de rotación de los discos que contiene.
+
+
 
 En la sección de teoremas (\ref{contenido})
 
